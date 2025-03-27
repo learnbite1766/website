@@ -1,0 +1,243 @@
+/* General Styles */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #12151B;
+    color: #9AA1B0;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://st4.depositphotos.com/13324256/22074/i/450/depositphotos_220748492-stock-photo-close-view-black-luxury-car.jpg') no-repeat center center/cover;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #9AA1B0;
+    padding: 10px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-content .btn {
+    background: #4E525C;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-content .btn:hover {
+    background: #7A8191;
+}
+
+
+/* Navbar */
+.navbar {
+    background: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    background: #3c3f47;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+    background: #7A8191;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 20px;
+    text-align: center;
+    background: #12151B;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #9AA1B0;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.service-box {
+    background: #4E525C;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(154, 161, 176, 0.3);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service-box i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.read-more {
+    display: block;
+    margin-top: 15px;
+    color: #9AA1B0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Services Page Background */
+.services-page {
+    background: url('/mnt/data/image.png') no-repeat center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    background: #12151B;
+    color: #9AA1B0;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 0.9rem;
+}
+
+/* Updated Service Section */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.service {
+    background: #4E525C;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(154, 161, 176, 0.2);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.service p {
+    color: #9AA1B0;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.services-button {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #7A8191;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.view-all:hover {
+    background: #4E525C;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.godfather-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(154, 161, 176, 0.5);
+    margin-top: 10px;
+    color: #9AA1B0;
+}
+
+/* Include FontAwesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
