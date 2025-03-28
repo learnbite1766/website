@@ -7,99 +7,82 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Contact Us</h2>
 
-        <!-- Select Category Label -->
-<p style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">Select Category</p>
+    <!-- Contact Page Full-Screen Container -->
+    <div class="contact-container">
+        <div class="container">
+            <h2>Contact Us</h2>
 
-<!-- Category Buttons -->
-<div class="category-buttons">
-    <button>Automotive</button>
-    <button>Ownership</button>
-    <button>Careers</button>
-    <button>Timepieces</button>
-    <button>Partners</button>
-    <button>Press</button>
-    <button>General</button>
-</div>
+          
 
+            <!-- Contact Form -->
+            <form>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label>First Name</label>
+                        <input type="text" placeholder="Enter your first name" required>
 
-        <form>
-            <div class="form-row">
-                <div class="form-column">
-                    <label>First Name</label>
-                    <input type="text" placeholder="Enter your first name" required>
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
 
-                    <label>Email</label>
-                    <input type="email" placeholder="Enter your email" required>
+                        <label>Country</label>
+                        <select required>
+                            <option value="">Select your country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                        </select>
 
-                    <label>Country</label>
-                    <select required>
-                        <option value="">Select your country</option>
-                        <option value="India">India</option>
-                        <option value="USA">USA</option>
-                    </select>
+                        <label>Address Line 2</label>
+                        <input type="text" placeholder="Optional">
+                        
+                        <label>City</label>
+                        <input type="text" placeholder="Enter your city">
 
-                    <label>Address Line 2</label>
-                    <input type="text" placeholder="Optional">
-                    
-                    <label>City</label>
-                    <input type="text" placeholder="Enter your city">
+                        <label>Company Name or 'Self'</label>
+                        <input type="text" placeholder="Enter company or Self" required>
+                    </div>
 
-                    <label>Company Name or "Self"</label>
-                    <input type="text" placeholder="Enter company or Self" required>
+                    <div class="form-column">
+                        <label>Last Name</label>
+                        <input type="text" placeholder="Enter your last name">
+
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="Enter your phone number" required>
+
+                        <label>Address Line 1</label>
+                        <input type="text" placeholder="Enter address" required>
+
+                        <label>Address Line 3</label>
+                        <input type="text" placeholder="Optional">
+
+                        <label>Zip/Postal Code</label>
+                        <input type="text" placeholder="Enter postal code">
+
+                        <label>Comments</label>
+                        <textarea rows="3" placeholder="Enter your message"></textarea>
+                    </div>
                 </div>
 
-                <div class="form-column">
-                    <label>Last Name</label>
-                    <input type="text" placeholder="Enter your last name">
-
-                    <label>Phone Number</label>
-                    <input type="tel" placeholder="Enter your phone number" required>
-
-                    <label>Address Line 1</label>
-                    <input type="text" placeholder="Enter address" required>
-
-                    <label>Address Line 3</label>
-                    <input type="text" placeholder="Optional">
-
-                    <label>Zip/Postal Code</label>
-                    <input type="text" placeholder="Enter postal code">
-
-                    <label>Comments</label>
-                    <textarea rows="3" placeholder="Enter your message"></textarea>
+                <!-- Checkbox and Submit -->
+                <div class="checkbox-container">
+                    <div>
+                        <input type="checkbox" id="agree">
+                        <label for="agree">Yes, I accept</label>
+                    </div>
+                    <button type="submit" id="submit-btn" disabled>Send It</button>
                 </div>
-            </div>
-
-            <div class="checkbox-container">
-                <div>
-                    <input type="checkbox" id="agree">
-                    <label for="agree">Yes, I accept</label>
-                </div>
-                <button type="submit" id="submit-btn" disabled>Send It</button>
-            </div>
-            
-            <script>
-                document.getElementById('agree').addEventListener('change', function () {
-                    document.getElementById('submit-btn').disabled = !this.checked;
-                });
-            </script>
-            
-        </form>
+            </form>
+        </div>
     </div>
 
+    <!-- JavaScript for Form Validation -->
     <script>
-        // Enable submit button only when checkbox is checked
-        const agreeCheckbox = document.getElementById("agree");
-        const submitButton = document.getElementById("submit-button");
-
-        agreeCheckbox.addEventListener("change", function () {
-            submitButton.disabled = !agreeCheckbox.checked;
+        document.getElementById('agree').addEventListener('change', function () {
+            document.getElementById('submit-btn').disabled = !this.checked;
         });
 
-        // Category button selection logic
-        const categoryButtons = document.querySelectorAll(".category");
+        // Category Selection
+        const categoryButtons = document.querySelectorAll(".category-buttons button");
         categoryButtons.forEach(button => {
             button.addEventListener("click", function () {
                 categoryButtons.forEach(btn => btn.classList.remove("selected"));
@@ -107,5 +90,6 @@
             });
         });
     </script>
+
 </body>
 </html>
