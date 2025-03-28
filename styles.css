@@ -241,3 +241,127 @@ body {
 
 /* Include FontAwesome */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+/* CONTACT US PAGE */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    background-color: #222;
+    padding: 30px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+/* Title */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Category Selection */
+.category-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.category-buttons button {
+    padding: 10px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-buttons button:hover {
+    background-color: #666;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Two-Column Layout */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-column {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels & Inputs */
+label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    background: #333;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Checkbox & Button Alignment */
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.checkbox-container label {
+    margin-left: 5px;
+}
+
+/* Button */
+button {
+    margin-left: 15px;
+    padding: 12px;
+    background-color: #666;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto;
+}
+
+button:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+/* Font Styling */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+
+.godfather-text {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(154, 161, 176, 0.5);
+    margin-top: 10px;
+    color: #9AA1B0;
+}
