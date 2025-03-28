@@ -1,0 +1,86 @@
+/* Confirmation page */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body.confirmation-page {
+    background-color: #0d0d0d; /* Slightly lighter dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Styled confirmation box */
+.confirmation-container {
+    padding: 30px;
+    color: white;
+    width: 450px;
+    border-radius: 12px;
+    background: rgba(34, 34, 34, 0.95); /* Darker with slight transparency */
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px); /* Smooth glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title */
+h2 {
+    color: #ddd; /* Softer white */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbb; /* Light gray for readability */
+}
+
+/* Button styling */
+.back-btn {
+    background-color: #444; /* Sleek dark button */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    background-color: #5a5a5a; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Additional styles for the confirmation message */
+.confirmation-message {
+    font-weight: bold; /* Make the confirmation message stand out */
+    color: #252424; /* Bright green for emphasis */
+}
+
+.icon {
+    font-size: 50px; /* Larger icon size for visibility */
+}

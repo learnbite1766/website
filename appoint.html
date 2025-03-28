@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="next.css">
+
+</head>
+<body>
+    <form action="vehicle-appointment.html" method="GET">
+    <div class="form-container">
+        <body class="appointment-page">
+
+        <h2>APPOINTMENT FORM</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone/Email (Optional)</label>
+                    <input type="text" placeholder="Enter phone or email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Service Request Type *</label>
+                    <input type="text" placeholder="Enter service type" required>
+                </div>
+                <div class="form-group">
+                    <label>Date/Time Selection *</label>
+                    <input type="datetime-local" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Vehicle Info (Make/Model/Year) *</label>
+                    <input type="text" placeholder="Enter vehicle details" required>
+                </div>
+                <div class="form-group">
+                    <label>Problem Description *</label>
+                    <textarea placeholder="Describe the issue" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Address (Home or Service Center) *</label>
+                    <input type="text" placeholder="Enter address" required>
+                </div>
+                <div class="form-group">
+                    <label>Special Instructions (Optional)</label>
+                    <textarea placeholder="Any special request"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
